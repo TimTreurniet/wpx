@@ -1,0 +1,50 @@
+.IconButton {
+
+   $size: 50px;
+
+  width: $size;
+  height: $size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--fg-white);
+  background-color: var(--bg-black);
+  cursor: pointer;
+  transition: var(--transition);
+
+  &[data-object-type="active"] {
+    border: 1px solid var(--bg-bright-green-100);
+  }
+
+  &:hover {
+    background-color: var(--bg-bright-green-40);
+    border: 1px solid var(--bg-bright-green-100);
+  }
+
+  // XS - Phone
+  @media (max-width: 480px) {
+
+  }
+
+  // S - Tablet
+  @media (max-width: 768px) {
+
+  }
+
+  // M - Tablet/Laptop
+  @media (max-width: 1024px) {
+
+  }
+
+  // L - High Res
+  @media (max-width: 1200px) {
+
+  }
+
+  // XL - Ultra High Res
+  @media (min-width: 1201px) {
+
+  }
+
+}

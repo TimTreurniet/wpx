@@ -556,5 +556,34 @@ h6 {
 .Label[data-object-type=primary] {
   background-color: lime;
 }
+.IconButton {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--fg-white);
+  background-color: var(--bg-black);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.IconButton[data-object-type=active] {
+  border: 1px solid var(--bg-bright-green-100);
+}
+.IconButton:hover {
+  background-color: var(--bg-bright-green-40);
+  border: 1px solid var(--bg-bright-green-100);
+}
+.IconList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.SideBar {
+  background-color: var(--bg-black);
+  padding: 20px;
+  max-width: 100px;
+}
 
 /*# sourceMappingURL=main.css.map */
