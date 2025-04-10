@@ -1,11 +1,15 @@
 
 
-import { Logo } from './components/atoms'
+import { SideBar } from "./components/organisms";
+import { SideBarMock } from "./components/organisms/SideBar/SideBar.mock";
 
 const App = () => {
   return(
     <div>
-      <Logo text={'Hi mom'}/>
+      <SideBar
+        testID="SideBar"
+        sidebarItems={ SideBarMock.sidebarItems }
+      />
     </div>
   )
 }
