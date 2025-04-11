@@ -11,8 +11,10 @@
     "@types/node": "^16.7.13",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "json-server": "^1.0.0-beta.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
@@ -25,7 +27,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "token": "json-to-scss ./src/resources/design/tokens.json ./src/resources/styles/tokens/_tokens.scss",
-    "scss": "sass ./src/resources/styles/main.scss ./src/resources/styles/main.css"
+    "scss": "sass ./src/resources/styles/main.scss ./src/resources/styles/main.css",
+    "server": "json-server --watch ./data/people.json --port 3001 --delay 2000"
   },
   "eslintConfig": {
     "extends": [
